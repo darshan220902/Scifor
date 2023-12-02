@@ -1,0 +1,87 @@
+Q1   What is Streamlit, and how does it differ from other web frameworks ?
+
+ans- Streamlit is a open source python framework use for creating web apps. Mainly helps Data Teams to vizualize pattern in web and
+     made easy to understand to everyone and easy shareability.
+    
+
+    it's differ from other frameworks due to following results
+
+    1) Streamlit is easy to use mainly use by data teams to create fast and simple web apps
+  
+    2) Streamlit app automatically updates based on user interactions or changes in the data
+  
+    3) Minimizes the need for template or frontend code
+
+
+Q2 Explain the basic structure of a Streamlit app ?
+
+ans - import streamlit as st  # first import Streamlit
+      import pandas as pd    # import pandas
+      st.title("App") # Set app title
+      st.write("Welcome! This is a simple Streamlit app.") # Display text
+
+      df=pd.DataFrame({                  # Create DataFrame
+        'first column':[1,2,3,4],
+        'second column':[10,20,20,40]
+         })
+     
+     st.dataframe(df) # Display DataFrame
+     st.line_chart(df) # Vizualize the data by using line chart
+
+Q3 How can you add a title to your Streamlit app?
+
+ans - import streamlit as st  # first import Streamlit
+      
+      Syntax - st.title(text) 
+
+     Example- st.title("App") # Set app title
+
+Q4 What is the purpose of the st.write() function in Streamlit?
+
+ans - The st.write() function in Streamlit  that allows to display a wide range of content in app and used to show text, data, charts.
+      
+      Syntax - st.write(text)
+      
+      Example1 - st.write('Hello')
+
+      Example2 - name="Darshan"
+                st.write('Hello my name is',name)
+
+Q5 How do you create interactive widgets in Streamlit? Provide examples?
+
+ans - st.button(label, key=None): Create a clickable button
+      st.checkbox(label, value=False, key=None): Create a checkbox
+      st.radio(label, options, index=0, key=None): Create a radio button
+      st.slider(label, min_value, max_value, value=None, step=None, format=None, key=None): Create a slider
+     
+
+    Example -
+import streamlit as st
+def main():
+    # Set app title
+    st.title("App")
+
+    # Add a slider widget for Score
+    Score = st.slider("Select your Math Score:", min_value=0, max_value=100, value=25)
+
+    # Add a checkbox for Back Status
+    Status = st.checkbox("Do you have a back?")
+
+    # Add a selectbox for choosing a favorite subject
+    favorite_sub = st.selectbox("Choose your Subject:", ['Math','Science','Biology'])
+
+    # Display user information
+    st.write(f"Your Score is: {Score}")
+    st.write(f"Back Status: {'Yes' if Status else 'No'}")
+    st.write(f"Favorite Subject: {favorite_sub}")
+
+if __name__ == "__main__":
+    main()
+      
+      
+
+
+
+    
+
+     

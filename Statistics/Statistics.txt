@@ -1,0 +1,57 @@
+﻿What is the purpose of descriptive statistics?
+
+
+Ans - The purpose of Descriptive statistics to find describe and summarize the main feature of data.
+
+
+Can you explain the difference between mean, median, and mode?
+Ans-
+Mean- the average of all value 
+            mean= sum of all values/number of values
+
+
+Median - it’s find the middle value from all value
+  
+
+
+Mode - The most frequent  value from all value
+
+
+
+
+How do you interpret the standard deviation of a dataset?
+
+
+Ans- The measure amount varaition  in as set of values
+           sd=sq root (summ(xi-x(bar))/N)
+
+
+
+
+Describe the concept of skewness in statistics.
+
+
+Ans-  skeweness is used to measure the asymmetry
+
+
+Left skew - Negative skew   median>mean
+Right skew - positive skew     mean>median
+
+
+
+
+No Skew - 0    median=mean
+
+
+
+
+
+
+What is the main goal of inferential statistic 
+
+
+
+
+Explain the difference between a population and a sample.
+What is a confidence interval, and how is it useful in inferential statistics?
+Define p-value
